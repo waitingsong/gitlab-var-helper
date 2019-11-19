@@ -1,6 +1,6 @@
 {
-  "name": "npm-mono-base",
-  "description": "",
+  "name": "gitlab-var-helper",
+  "description": "Batch set gitlab CI/CD variables with toml file",
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "8",
