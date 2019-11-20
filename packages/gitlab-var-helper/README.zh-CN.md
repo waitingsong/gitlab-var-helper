@@ -22,7 +22,7 @@ npm i gitlab-var-helper-cli
 
 ## Usage
 
-### Generate token
+### 生成 token
 
 1. Open page
   ```
@@ -38,7 +38,7 @@ npm i gitlab-var-helper-cli
   ```
 
 
-### Create settings file
+### 创建设置文件
 
 ```toml
 # settings.toml
@@ -81,7 +81,7 @@ pids = [ 76, 77 ]
 
 ```
 
-### Calling with package
+### 通过包调用
 
 ```ts
 import { loadFiles } from 'gitlab-var-helper'
@@ -90,7 +90,7 @@ const paths = [ './settings.toml' ]
 loadFiless(paths)
 ```
 
-### Calling by cli
+### 通过命令行调用
 
 ```sh
 gitlab-var-helper -f ./settings.toml

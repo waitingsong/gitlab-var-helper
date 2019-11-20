@@ -14,87 +14,7 @@ based on [gitlab-variable-helper]
 ## Installation
 
 ```sh
-npm i gitlab-var-helper
-# cli
 npm i gitlab-var-helper-cli
-```
-
-
-## Usage
-
-### Generate token
-
-1. Open page
-  ```
-  https://git.your.com/profile/personal_access_tokens
-  ```
-2. Create `Personal Access Tokens` with `Scopes`
-  - `api` 
-  - `read_repository`
-  - `write_repository`
-3. Remember the generated `token`
-  ```
-  Upw_foooooooooooo
-  ```
-
-
-### Create settings file
-
-```toml
-# settings.toml
-title = "gitlab var settints"
-host = "https://git.your.com"
-token = "Upw_foooooooooooo"
-
-# groups ids
-gids = [ 13 ]
-
-# project ids
-pids = [ 76, 77 ]
-
-# gVars.0 provides default values for groups in gids 
-[gVars.0.publicVars]
-  VAR_PUB = 1024
-  VAR_DUP_PUB = 1024
-
-[gVars.0.protectedVars]
-  VAR_HIDE = 1024
-  VAR_HIDE2 = 1024
-
-[gVars.13.publicVars]
-  VAR_PUB = 'abcd'
-[gVars.13.protectedVars]
-  VAR_HIDE = 'def'
-  VAR_DUP_PUB = 2048
-
-# pVars.0 provides default values for Projects in pids
-[pVars.0.publicVars]
-  VAR_PUB = 1024
-[pVars.0.protectedVars]
-  VAR_HIDE = 1024
-
-[pVars.77.publicVars]
-  VAR_PUB = 2048
-  VAR_77_PUB = 2048
-[pVars.77.protectedVars]
-  VAR_77_HIDE = 2048
-
-```
-
-### Calling with package
-
-```ts
-import { loadFiles } from 'gitlab-var-helper'
-
-const paths = [ './settings.toml' ]
-loadFiless(paths)
-```
-
-### Calling by cli
-
-```sh
-gitlab-var-helper -f ./settings.toml
-gitlab-var-helper -f ./settings.toml -f ./other.toml
 ```
 
 
@@ -112,7 +32,6 @@ gitlab-var-helper -f ./settings.toml -f ./other.toml
 
 ### Languages
 - [English](README.md)
-- [中文](README.zh-CN.md)
 
 
 [`gitlab-var-helper`]: https://github.com/waitingsong/kmore/tree/master/packages/gitlab-var-helper
