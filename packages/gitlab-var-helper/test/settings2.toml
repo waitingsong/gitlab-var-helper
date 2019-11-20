@@ -1,0 +1,25 @@
+
+title = "gitlab var settints"
+host = "https://git.lab.com"
+token = "Upw_foooooooooooo"
+
+gids = [
+  13,
+]
+
+pids = []
+
+[gVars.0.publicVars]
+  VAR_PUB = 10240
+  VAR_DUP_PUB = 10240
+
+[gVars.0.protectedVars]
+  VAR_HIDE = 10240
+  VAR_HIDE2 = 10240
+
+[gVars.13.publicVars]
+  VAR_PUB = 'abcd'
+[gVars.13.protectedVars]
+  VAR_HIDE = 'def'
+  VAR_DUP_PUB = 20480
+
