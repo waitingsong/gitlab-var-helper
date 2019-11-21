@@ -1,7 +1,7 @@
 {
   "name": "gitlab-var-helper",
   "author": "waiting",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Batch set gitlab CI/CD variables with toml",
   "keywords": [
     "gitlab",
