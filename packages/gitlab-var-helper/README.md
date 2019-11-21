@@ -16,7 +16,7 @@ based on [gitlab-variable-helper]
 ```sh
 npm i gitlab-var-helper
 # cli
-npm i gitlab-var-helper-cli
+npm i -g gitlab-var-helper-cli
 ```
 
 
