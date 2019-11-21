@@ -1,7 +1,7 @@
 {
   "name": "gitlab-var-helper-cli",
   "author": "waiting",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Batch set gitlab CI/CD variables with toml",
   "keywords": [
     "gitlab",
@@ -36,7 +36,7 @@
   "dependencies": {
     "@waiting/shared-core": "3",
     "@waiting/shared-types": "3",
-    "gitlab-var-helper": "^0.2.0",
+    "gitlab-var-helper": "^0.3.0",
     "rxjs": "^6.5.2",
     "yargs": "15"
   },

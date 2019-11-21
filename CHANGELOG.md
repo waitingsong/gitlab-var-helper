@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/waitingsong/gitlab-var-helper/compare/v0.2.0...v0.3.0) (2019-11-21)
+
+
+### Features
+
+* **cli:** add option logLevel ([285dfe7](https://github.com/waitingsong/gitlab-var-helper/commit/285dfe7c3a0ae1005e2a2de257fa60f43d0d6725))
+
+
+
+
+
 # [0.2.0](https://github.com/waitingsong/gitlab-var-helper/compare/v0.1.0...v0.2.0) (2019-11-21)
 
 
