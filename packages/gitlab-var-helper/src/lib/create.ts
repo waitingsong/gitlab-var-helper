@@ -116,26 +116,26 @@ function createRow(
   const ret$ = post<EnvJson>(url, opts).pipe(
     map(() => {
       const ret: SaveRet = {
+        result: 'success',
         action: 'create',
         apiType,
         itemId,
         key: data.key,
         masked: data.masked,
         protected: data.protected,
-        result: true,
         errMsg: '',
       }
       return ret
     }),
     catchError((err: Error) => {
       const ret: SaveRet = {
+        result: 'fail',
         action: 'create',
         apiType,
         itemId,
         key: data.key,
         masked: data.masked,
         protected: data.protected,
-        result: false,
         errMsg: err.message,
       }
       return of(ret)

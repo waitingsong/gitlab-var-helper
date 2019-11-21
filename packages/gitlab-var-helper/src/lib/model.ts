@@ -81,7 +81,7 @@ export interface SaveRet {
   key: EnvKey
   masked: boolean
   protected: boolean
-  result: boolean
+  result: 'success' | 'fail'
   errMsg: string
 }
 

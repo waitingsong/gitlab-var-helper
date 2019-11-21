@@ -102,26 +102,26 @@ function updateExistingRow(
   const ret$ = put<EnvJson>(url, opts).pipe(
     map(() => {
       const ret: SaveRet = {
+        result: 'success',
         action: 'update',
         apiType,
         itemId,
         key: data.key,
         masked: data.masked,
         protected: data.protected,
-        result: true,
         errMsg: '',
       }
       return ret
     }),
     catchError((err: Error) => {
       const ret: SaveRet = {
+        result: 'fail',
         action: 'update',
         apiType,
         itemId,
         key: data.key,
         masked: data.masked,
         protected: data.protected,
-        result: false,
         errMsg: err.message,
       }
       return of(ret)
