@@ -22,7 +22,7 @@ export function runCmd(args: RunCmdArgs): Observable<SaveRet | null> {
 }
 
 
-function load(options: Options): Observable<SaveRet | null> {
+function load(options: Options): Observable<SaveRet> {
   const { f: file } = options
   const paths: string[] = typeof file === 'string'
     ? [file]

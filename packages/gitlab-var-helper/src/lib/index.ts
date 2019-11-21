@@ -1,5 +1,5 @@
 import { from as ofrom, concat, Observable } from 'rxjs'
-import { mergeMap } from 'rxjs/operators'
+import { mergeMap, filter } from 'rxjs/operators'
 
 import {
   EnvSettings,
@@ -16,7 +16,7 @@ import { updateById } from './update'
 import { createById } from './create'
 
 
-export function loadFiles(paths: string[]): Observable<SaveRet | null> {
+export function loadFiles(paths: string[]): Observable<SaveRet> {
   const path$ = ofrom(paths)
   const ret$ = path$.pipe(
     mergeMap((path) => {
@@ -24,6 +24,7 @@ export function loadFiles(paths: string[]): Observable<SaveRet | null> {
       const save$ = saveSettings(settings)
       return save$
     }),
+    filter((ret): ret is SaveRet => !! ret),
   )
   return ret$
 }

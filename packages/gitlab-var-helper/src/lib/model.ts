@@ -1,4 +1,15 @@
 
+export interface SaveRet {
+  result: 'success' | 'fail'
+  action: 'create' | 'update'
+  apiType: ApiType
+  itemId: ItemId
+  key: EnvKey
+  masked: boolean
+  protected: boolean
+  errMsg: string
+}
+
 export interface SettingsInput {
   /**
    * Your gitlab host,
@@ -72,16 +83,5 @@ export interface UpdateRowsOpts {
   settings: EnvSettings
   existingRows: EnvJson[]
   rowDataMap: RowDataMap
-}
-
-export interface SaveRet {
-  action: 'create' | 'update'
-  apiType: ApiType
-  itemId: ItemId
-  key: EnvKey
-  masked: boolean
-  protected: boolean
-  result: 'success' | 'fail'
-  errMsg: string
 }
 
