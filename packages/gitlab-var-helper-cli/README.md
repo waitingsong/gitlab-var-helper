@@ -14,9 +14,14 @@ based on [gitlab-variable-helper]
 ## Installation
 
 ```sh
-npm i gitlab-var-helper-cli
+npm i -g gitlab-var-helper-cli
 ```
 
+## Usage
+
+```sh
+gitlab-var-helper-cli load -f settings.toml
+```
 
 ## Packages
 

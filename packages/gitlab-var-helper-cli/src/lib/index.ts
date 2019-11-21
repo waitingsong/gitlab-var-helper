@@ -1,5 +1,6 @@
 /* eslint-disable id-length */
 import { Observable } from 'rxjs'
+import { finalize } from 'rxjs/operators'
 import {
   loadFiles,
   SaveRet,
@@ -23,12 +24,21 @@ export function runCmd(args: RunCmdArgs): Observable<SaveRet | null> {
 
 
 function load(options: Options): Observable<SaveRet> {
-  const { f: file } = options
+  const { f: file, ignoreCert } = options
   const paths: string[] = typeof file === 'string'
     ? [file]
     : file
 
+  const oldVal = process.env.NODE_TLS_REJECT_UNAUTHORIZED
+  if (ignoreCert) {
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+  }
+
   const ret$ = loadFiles(paths)
-  return ret$
+  return ret$.pipe(
+    finalize(() => {
+      process.env.NODE_TLS_REJECT_UNAUTHORIZED = oldVal
+    }),
+  )
 }
 

@@ -1,4 +1,4 @@
-import { cmdSet, tw2 } from './config'
+import { cmdSet, tw2, tw1 } from './config'
 import { CmdType } from './model'
 
 
@@ -27,14 +27,16 @@ export function helpLoad(): string {
   const intro = 'Load CI group/project variables from file(s) and save to the remote gitlab repository'
   const body = 'Valid options are:'
   const opts = [
-    `  -f${tw2}settings file in toml format`,
-    `  -h${tw2}Display this summary`,
-    `  -d${tw2}Display debug info`,
+    `  -f [FILE]${tw1}settings file in toml format`,
+    `  --ignoreCert ${tw1}ignore verification of the certificate`,
+    `  -h ${tw2}Display this summary`,
+    `  -d ${tw2}Display debug info`,
   ]
   const demo = [
     'Demo:',
     '  gitlab-var-helper load -f settings.toml',
     '  gitlab-var-helper load -f settings.toml -f s2.toml',
+    '  gitlab-var-helper load -f settings.toml --ignoreCert',
   ]
 
   return `${head}\n\n${intro}\n\n${body}\n${opts.join('\n')}\n\n${demo.join('\n')}`

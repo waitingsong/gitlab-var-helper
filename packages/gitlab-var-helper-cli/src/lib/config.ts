@@ -12,6 +12,7 @@ export const initialCliArgs: CliArgs = {
   cmd: void 0,
   options: {
     f: '',
+    ignoreCert: false,
   },
   needHelp: false,
   debug: false,

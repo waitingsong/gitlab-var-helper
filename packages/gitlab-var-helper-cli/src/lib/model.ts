@@ -4,6 +4,8 @@ export type CmdType = 'load'
 export interface Options {
   /** file path */
   f: string | string[]
+  /** ignore verification of the certificate */
+  ignoreCert: boolean
 }
 
 export interface InputOptions {
@@ -19,3 +21,4 @@ export interface RunCmdArgs {
 export interface CliArgs extends RunCmdArgs {
   needHelp: boolean
 }
+
