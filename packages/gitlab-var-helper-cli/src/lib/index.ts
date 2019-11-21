@@ -30,7 +30,7 @@ function load(options: Options): Observable<SaveRet> {
     : file
 
   const oldVal = process.env.NODE_TLS_REJECT_UNAUTHORIZED
-  if (ignoreCert) {
+  if (ignoreCert === true) {
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
   }
 

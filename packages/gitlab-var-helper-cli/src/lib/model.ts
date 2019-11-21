@@ -4,8 +4,8 @@ export type CmdType = 'load'
 export interface Options {
   /** file path */
   f: string | string[]
-  /** ignore verification of the certificate */
-  ignoreCert: boolean
+  /** Ignore verification of the certificate, Default: false */
+  ignoreCert?: boolean
 }
 
 export interface InputOptions {
