@@ -143,8 +143,11 @@ loadFiless(paths)</code></pre>
 				<a href="#calling-by-cli" id="calling-by-cli" style="color: inherit; text-decoration: none;">
 					<h3>Calling by cli</h3>
 				</a>
-				<pre><code class="language-sh">gitlab-var-helper -f ./settings.toml
-gitlab-var-helper -f ./settings.toml -f ./other.toml</code></pre>
+				<pre><code class="language-sh"><span class="hljs-comment"># log error</span>
+gitlab-var-helper load -f ./settings.toml
+gitlab-var-helper load -f ./settings.toml -f ./other.toml
+<span class="hljs-comment"># log info</span>
+gitlab-var-helper load -f settings.toml --logLevel info</code></pre>
 				<a href="#packages" id="packages" style="color: inherit; text-decoration: none;">
 					<h2>Packages</h2>
 				</a>

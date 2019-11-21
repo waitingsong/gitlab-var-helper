@@ -20,7 +20,11 @@ npm i -g gitlab-var-helper-cli
 ## Usage
 
 ```sh
-gitlab-var-helper-cli load -f settings.toml
+# log error
+gitlab-var-helper load -f settings.toml
+gitlab-var-helper load -f ./settings.toml -f ./other.toml
+# log info
+gitlab-var-helper load -f settings.toml --logLevel info
 ```
 
 ## Packages

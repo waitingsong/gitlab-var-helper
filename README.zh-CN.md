@@ -93,8 +93,11 @@ loadFiless(paths)
 ### 通过命令行调用
 
 ```sh
-gitlab-var-helper -f ./settings.toml
-gitlab-var-helper -f ./settings.toml -f ./other.toml
+# log error
+gitlab-var-helper load -f ./settings.toml
+gitlab-var-helper load -f ./settings.toml -f ./other.toml
+# log info
+gitlab-var-helper load -f settings.toml --logLevel info
 ```
 
 
