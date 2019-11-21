@@ -129,7 +129,7 @@ gitlab-var-helper load -f settings.toml --logLevel info
 
 [`gitlab-var-helper-cli`]: https://github.com/waitingsong/gitlab-var-helper/tree/master/packages/gitlab-var-helper-cli
 [cli-svg]: https://img.shields.io/npm/v/gitlab-var-helper-cli.svg?maxAge=86400
-[cli-ch]: https://github.com/waitingsong/gitlab-var-helper/tree/master/packages/gitlab-var-helper-clie/CHANGELOG.md
+[cli-ch]: https://github.com/waitingsong/gitlab-var-helper/tree/master/packages/gitlab-var-helper-cli/CHANGELOG.md
 [cli-d-svg]: https://david-dm.org/waitingsong/gitlab-var-helper.svg?path=packages/gitlab-var-helper-cli
 [cli-d-link]: https://david-dm.org/waitingsong/gitlab-var-helper.svg?path=packages/gitlab-var-helper-cli
 [cli-dd-svg]: https://david-dm.org/waitingsong/gitlab-var-helper/dev-status.svg?path=packages/gitlab-var-helper-cli
