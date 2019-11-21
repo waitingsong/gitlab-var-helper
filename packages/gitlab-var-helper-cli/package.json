@@ -7,9 +7,11 @@
     "gitlab",
     "ci",
     "cd",
+    "environment",
     "group-level",
     "project-level",
     "protected",
+    "runner",
     "variables",
     "typescript",
     "ts"
