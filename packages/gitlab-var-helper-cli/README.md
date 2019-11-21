@@ -34,7 +34,7 @@ npm i gitlab-var-helper-cli
 - [English](README.md)
 
 
-[`gitlab-var-helper`]: https://github.com/waitingsong/kmore/tree/master/packages/gitlab-var-helper
+[`gitlab-var-helper`]: https://github.com/waitingsong/gitlab-var-helper/tree/master/packages/gitlab-var-helper
 [main-svg]: https://img.shields.io/npm/v/gitlab-var-helper.svg?maxAge=86400
 [main-ch]: https://github.com/waitingsong/gitlab-var-helper/tree/master/packages/gitlab-var-helper/CHANGELOG.md
 [main-d-svg]: https://david-dm.org/waitingsong/gitlab-var-helper.svg?path=packages/gitlab-var-helper
