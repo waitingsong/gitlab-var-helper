@@ -6,6 +6,8 @@ export interface Options {
   f: string | string[]
   /** Ignore verification of the certificate, Default: false */
   ignoreCert?: boolean
+  /** Default: error */
+  logLevel?: 'info' | 'error'
 }
 
 export interface InputOptions {
