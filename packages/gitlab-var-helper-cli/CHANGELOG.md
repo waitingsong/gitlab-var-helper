@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/waitingsong/gitlab-var-helper/compare/v0.3.1...v0.4.0) (2019-11-22)
+
+
+### Features
+
+* **cli:** output message when completed ([76f23c1](https://github.com/waitingsong/gitlab-var-helper/commit/76f23c1cffcb01b7984152756522bc0f14620efb))
+
+
+
+
+
 ## [0.3.1](https://github.com/waitingsong/gitlab-var-helper/compare/v0.3.0...v0.3.1) (2019-11-21)
 
 **Note:** Version bump only for package gitlab-var-helper-cli
