@@ -45,7 +45,11 @@ function load(options: Options): Observable<SaveRet> {
     finalize(() => {
       process.env.NODE_TLS_REJECT_UNAUTHORIZED = oldVal
       if (hasFail) {
+        console.info('Load settings completed with failure.')
         process.exit(1)
+      }
+      else {
+        console.info('Load settings completed.')
       }
     }),
     filter((ret) => {
