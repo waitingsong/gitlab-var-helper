@@ -40,6 +40,8 @@ pids = [
   VAR_DUP_PUB = 1024
 
 [gVars.0.protectedVars]
+  GH_TOKEN = "Upw_Rn45atASeCUbyC99"
+  GL_TOKEN = "Upw_Rn45atASeCUbyC99"
   VAR_HIDE = 1024
   VAR_HIDE2 = 1024
 
