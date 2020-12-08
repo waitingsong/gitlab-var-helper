@@ -98,6 +98,8 @@ gitlab-var-helper load -f ./settings.toml
 gitlab-var-helper load -f ./settings.toml -f ./other.toml
 # log info
 gitlab-var-helper load -f settings.toml --logLevel info
+
+gitlab-var-helper load -f settings.toml --ignoreCert
 ```
 
 
